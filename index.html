@@ -19,7 +19,7 @@
 
 </head>
 
-<body class="nk-body " data-menu-collapse="lg">
+<body class="nk-body " id="check-os-theme" data-menu-collapse="lg">
     <div class="nk-app-root">  
         <header class="nk-header bg-darker is-dark has-mask overflow-hidden">
             <div class="nk-mask bg-pattern-bgimagetwo bg-blend-top"></div>
@@ -712,7 +712,24 @@
     </script>
     <script src="assets/js/bundle.js?v1.4.0"></script>
     <script src="assets/js/scripts.js?v1.4.0"></script>
-   
+   <script>
+    function isSystemDarkMode() {
+  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function updateThemeClass() {
+  const divElement = document.getElementById('check-os-theme'); // Substitua 'sua-div' pelo ID da sua div
+
+  if (isSystemDarkMode()) {
+    divElement.classList.add('is-dark');
+  } else {
+    divElement.classList.remove('is-dark');
+  }
+}
+
+// Chame a função quando a página carregar
+window.addEventListener('load', updateThemeClass);
+   </script>
 
     <!-- Modal -->
     <div class="modal fade video-modal" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
