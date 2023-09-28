@@ -13118,6 +13118,9 @@ textarea.form-control-lg {
   .d-none-sml{
     display: none;
   }
+  .video-institucinal{
+    height: 100% !important; 
+  }
 }
 @media (min-width: 576px) {
   .float-sm-start {
@@ -34038,5 +34041,11 @@ body.is-dark {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.video-institucinal{
+  width: 100%;
+  height: 700px; 
+  object-fit: cover;
 }
 
