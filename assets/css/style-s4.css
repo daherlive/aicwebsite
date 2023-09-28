@@ -13120,6 +13120,7 @@ textarea.form-control-lg {
   }
   .video-institucinal{
     height: 100% !important; 
+    height: 100% !important;
   }
 }
 @media (min-width: 576px) {
@@ -34047,5 +34048,6 @@ body.is-dark {
   width: 100%;
   height: 700px; 
   object-fit: cover;
+  border-radius: 10px;
 }
 
