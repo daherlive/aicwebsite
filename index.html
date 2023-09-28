@@ -628,7 +628,6 @@
                                       <div class="swiper-slide w-auto"><img data-bs-toggle="modal" data-bs-target="#meuModal" class="rounded" style="width:300px;height:500px; object-fit: cover;" src="https://i.ytimg.com/vi/K4QDYkQ4aiA/maxresdefault.jpg" srcset="https://i.ytimg.com/vi/K4QDYkQ4aiA/maxresdefault.jpg 2x" alt=""></div>
                                       <div class="swiper-slide w-auto"><img data-bs-toggle="modal" data-bs-target="#meuModal" class="rounded" style="width:300px;height:500px; object-fit: cover;" src="https://i.ytimg.com/vi/bVHm6kx_aRE/oar2.jpg?sqp=-oaymwEVCJUDENAFSFryq4qpAwcIARUAAIhC&rs=AOn4CLCE9hQU3PAKXEyxiOjHdibxp51CXw" srcset="https://i.ytimg.com/vi/bVHm6kx_aRE/oar2.jpg?sqp=-oaymwEVCJUDENAFSFryq4qpAwcIARUAAIhC&rs=AOn4CLCE9hQU3PAKXEyxiOjHdibxp51CXw 2x" alt=""></div>
                                       <div class="swiper-slide w-auto"><img data-bs-toggle="modal" data-bs-target="#meuModal" class="rounded" style="width:300px;height:500px; object-fit: cover;" src="https://i.ytimg.com/vi/AJUyZuo_95M/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG2CIACgA-KAgwIABABGH8gEygmMA8=&rs=AOn4CLAZ-Ya-fUrmOHxFGUQ3vZJdEmY_Mg" srcset="https://i.ytimg.com/vi/AJUyZuo_95M/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AG2CIACgA-KAgwIABABGH8gEygmMA8=&rs=AOn4CLAZ-Ya-fUrmOHxFGUQ3vZJdEmY_Mg 2x" alt=""></div>
-                                      <div class="swiper-slide w-auto"><img data-bs-toggle="modal" data-bs-target="#meuModal" class="rounded" style="width:300px;height:500px; object-fit: cover;" src="https://i.ytimg.com/vi/0sk7rXJAMUY/hqdefault.jpg" srcset="https://i.ytimg.com/vi/0sk7rXJAMUY/hqdefault.jpg 2x" alt=""></div>
                                    </div>
                                 </div>
                              </div>
@@ -733,42 +732,7 @@
     </script>
     <script src="assets/js/bundle.js?v1.4.0"></script>
     <script src="assets/js/scripts.js?v1.4.0"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          let splideOptions;
-      
-          // Verifica a largura da tela e define as opções do Splide com base nela.
-          const setSplideOptions = () => {
-            if (window.matchMedia('(max-width: 768px)').matches) {
-              // Configurações para dispositivos móveis
-              splideOptions = {
-                type: 'slide', 
-                perPage: 2  , // Por exemplo, 2 slides por vez em dispositivos móveis
-                perMove: 1,
-                autoplay: false,
-              };
-            } else {
-              // Configurações para desktop
-              splideOptions = {
-                type: 'slide', 
-                perPage: 3, // Por exemplo, 4 slides por vez em desktops
-                perMove: 1,
-                autoplay: false,
-              };
-            }
-          };
-      
-          // Chama a função para definir as opções do Splide com base na largura da tela atual.
-          setSplideOptions();
-      
-          // Inicializa o Splide com as opções configuradas.
-          new Splide('.splide', splideOptions).mount();
-          new Splide('.splidee', splideOptions).mount();
-      
-          // Atualiza as opções do Splide quando a tela for redimensionada.
-          window.addEventListener('resize', setSplideOptions);
-        });
-    </script>
+   
 
     <!-- Modal -->
     <div class="modal fade video-modal" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
