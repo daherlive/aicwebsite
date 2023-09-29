@@ -13118,6 +13118,9 @@ textarea.form-control-lg {
   .d-none-sml{
     display: none;
   }
+  .adj-padding{
+    padding-top: 80px !important;
+  }
   .video-institucional{
     height: 100% !important; 
     height: 380px !important;
@@ -34068,4 +34071,7 @@ body.is-dark {
 .adjs-logo{
   height: 45px !important; 
   margin-top: -7px;
+}
+.adj-padding{
+  padding-top: 0px;
 }
