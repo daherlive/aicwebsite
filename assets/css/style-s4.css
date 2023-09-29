@@ -33630,7 +33630,7 @@ strong {
 
 .bg-gradient-abc {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
-  background-size: 2560px, cover;
+  background-size: 560px, cover;
   background-position: center 100%;
   filter: brightness(0.5);
   height: 100% !important;
@@ -34055,7 +34055,7 @@ body.is-dark {
 
 .adj_hero_image{
   object-fit: cover;
-  height: 700px !important;
+  height: 600px !important;
   width: 100%;
 }
 
