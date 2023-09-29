@@ -33624,7 +33624,7 @@ strong {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
   background-size: 2560px, cover;
   background-position: center 100%;
-  filter: brightness(0.5);
+  filter: brightness(0.3);
   background-repeat: no-repeat, repeat no-repeat;
 }
 .is-dark .bg-gradient-a {
