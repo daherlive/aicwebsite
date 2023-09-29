@@ -26604,7 +26604,7 @@ display: none;
 }
 
 .is-dark .card {
-  --bs-card-bg: #242443;
+  --bs-card-bg: #151527;
 }
 .card-hover-translate {
   transition: all 0.3s ease;
