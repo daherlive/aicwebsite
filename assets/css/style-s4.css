@@ -32426,7 +32426,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 .on-dark .nk-menu-dropdown, .is-dark .nk-menu-dropdown {
-  background: #23234c;
+  background: #0F1318;
 }
 
 @media (min-width: 992px) {
@@ -32488,7 +32488,7 @@ textarea.form-control-lg {
     padding: 0 1rem;
   }
   [data-menu-collapse=lg] .on-dark .nk-menu-dropdown, [data-menu-collapse=lg].is-dark .nk-menu-dropdown {
-    background: #23234c;
+    background: #0F1318;
   }
   [data-menu-collapse=lg] .has-fixed .nk-menu-dropdown {
     border-top-right-radius: 0;
@@ -32554,7 +32554,7 @@ textarea.form-control-lg {
     padding: 0 1rem;
   }
   [data-menu-collapse=xl] .on-dark .nk-menu-dropdown, [data-menu-collapse=xl].is-dark .nk-menu-dropdown {
-    background: #23234c;
+    background: #0F1318;
   }
   [data-menu-collapse=xl] .has-fixed .nk-menu-dropdown {
     border-top-right-radius: 0;
@@ -33960,7 +33960,7 @@ body.is-dark {
   display: block;
 }
 .is-dark .border:not([class*=border-]) {
-  border-color: #23234c !important;
+  border-color: #0F1318 !important;
 }
 .is-dark .form-control-plaintext, .is-dark .form-control {
   color: #fff;
@@ -33971,7 +33971,7 @@ body.is-dark {
 }
 .is-dark .form-control:not(.form-control-plaintext) {
   background-color: #1e1e42;
-  border-color: #23234c;
+  border-color: #0F1318;
 }
 
 .is-dark:not(.bg-darker):not(.bg-dark) .bg-white {
