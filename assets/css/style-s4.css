@@ -26604,7 +26604,7 @@ display: none;
 }
 
 .is-dark .card {
-  --bs-card-bg: #121220;
+  --bs-card-bg: #22223d;
 }
 .card-hover-translate {
   transition: all 0.3s ease;
@@ -33975,10 +33975,10 @@ body.is-dark {
 }
 
 .is-dark:not(.bg-darker):not(.bg-dark) .bg-white {
-  background-color: RGBA(30, 30, 66, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(20, 20, 42, var(--bs-bg-opacity, 1)) !important;
 }
 .is-dark:not(.bg-darker):not(.bg-dark) .bg-light {
-  background-color: RGBA(27, 27, 59, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(20, 20, 42, var(--bs-bg-opacity, 1)) !important;
 }
 
 
