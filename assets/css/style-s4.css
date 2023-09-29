@@ -34055,7 +34055,7 @@ body.is-dark {
 
 .adj_hero_image{
   object-fit: cover;
-  height: 300px !important;
+  height: 700px !important;
   width: 100%;
 }
 
@@ -34063,4 +34063,9 @@ body.is-dark {
   width:100%; 
   height: 250px !important; 
   object-fit: cover;
+}
+
+.adjs-logo{
+  height: 45px !important; 
+  margin-top: -7px;
 }
