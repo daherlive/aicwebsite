@@ -34053,3 +34053,8 @@ body.is-dark {
   border-radius: 10px !important;
 }
 
+.adj_hero_image{
+  object-fit: cover;
+  height: 300px !important;
+  width: 100%;
+}
