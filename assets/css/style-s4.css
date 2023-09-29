@@ -13119,6 +13119,12 @@ textarea.form-control-lg {
     display: none;
   }
  
+  .adj_hero_image{
+    object-fit: cover !important;
+    height: 600px !important;
+    width: 100%;
+    opacity: 0.2 !important;
+  }
   .posi-mobile-text{
     margin-top: -90% !important;
   }
@@ -33656,7 +33662,7 @@ strong {
   background-position: center 100%;
   filter: brightness(0.1);
   height: 100% !important;
-  object-fit: cover !importantadj_hero_image;
+  object-fit: cover !important
   background-repeat: no-repeat, repeat no-repeat;
  
 }
