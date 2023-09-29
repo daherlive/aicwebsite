@@ -33656,7 +33656,7 @@ strong {
   background-position: center 100%;
   filter: brightness(0.1);
   height: 100% !important;
-
+  object-fit: cover !important;
   background-repeat: no-repeat, repeat no-repeat;
  
 }
