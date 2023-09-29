@@ -34058,3 +34058,9 @@ body.is-dark {
   height: 300px !important;
   width: 100%;
 }
+
+.event-card-home{
+  width:100%; 
+  height: 250px !important; 
+  object-fit: cover;
+}
