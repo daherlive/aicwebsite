@@ -13118,8 +13118,9 @@ textarea.form-control-lg {
   .d-none-sml{
     display: none;
   }
-  .adj-padding{
-    padding-top: 80px !important;
+ 
+  .posi-mobile-text{
+    margin-top: -90% !important;
   }
   .video-institucional{
     height: 100% !important; 
@@ -33649,6 +33650,24 @@ strong {
   background-size: 2560px, cover;
 }
 
+.bg-gradient-abcmobile {
+  background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
+  background-size: 560px, cover;
+  background-position: center 100%;
+  filter: brightness(0.5);
+  height: 100% !important;
+
+  background-repeat: no-repeat, repeat no-repeat;
+ 
+}
+.is-dark .bg-gradient-abcmobile {
+  background: rgb(31,38,50);
+  background: linear-gradient(64deg, rgba(31,38,50,1) 11%, rgba(15,19,24,0) 65%);
+    height: 100% !important;
+    margin-top: -0px;
+  background-size: 2560px, cover;
+}
+
 
 .bg-gradient-ab {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
@@ -34073,5 +34092,5 @@ body.is-dark {
   margin-top: -7px;
 }
 .adj-padding{
-  padding-top: 0px;
+  padding-top: 0px !important;
 }
