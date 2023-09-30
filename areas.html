@@ -8,9 +8,27 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <title>About - CopyGen - AI Writer &amp; Copywriting Landing Page HTML Template.</title>
     <link rel="stylesheet" href="assets/css/style.css?v1.4.0">
+    <script>
+        function isSystemDarkMode() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function updateThemeClass() {
+            const divElement = document.getElementById('check-os-theme'); // Substitua 'sua-div' pelo ID da sua div
+
+            if (isSystemDarkMode()) {
+                divElement.classList.add('is-dark');
+            } else {
+                divElement.classList.remove('is-dark');
+            }
+        }
+
+        // Chame a função quando a página carregar
+        window.addEventListener('load', updateThemeClass);
+    </script>
 </head>
 
-<body class="nk-body " data-menu-collapse="lg">
+<body class="nk-body "  id="check-os-theme" data-menu-collapse="lg">
     <div class="nk-app-root ">
         <header class="nk-header">
             <div class="nk-header-main nk-menu-main will-shrink is-transparent ignore-mask">
