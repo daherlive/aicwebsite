@@ -26614,7 +26614,7 @@ display: none;
 }
 
 .is-dark .card {
-  --bs-card-bg: #232C38;
+  --bs-card-bg: #22223d;
 }
 .card-hover-translate {
   transition: all 0.3s ease;
@@ -34006,7 +34006,7 @@ body.is-dark {
   background-color: RGBA(20, 20, 42, var(--bs-bg-opacity, 1)) !important;
 }
 .is-dark:not(.bg-darker):not(.bg-dark) .bg-light {
-  background-color: RGBA(35, 44, 56, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(20, 20, 42, var(--bs-bg-opacity, 1)) !important;
 }
 
 
