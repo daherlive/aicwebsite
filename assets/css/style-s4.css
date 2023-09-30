@@ -33642,7 +33642,7 @@ strong {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
   background-size: 560px, cover;
   background-position: center 100%;
-  filter: brightness(0.001);
+  filter: brightness(0.009);
   height: 100% !important;
 
   background-repeat: no-repeat, repeat no-repeat;
@@ -33660,7 +33660,7 @@ strong {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
   background-size: 560px, cover;
   background-position: center 100%;
-  filter: brightness(0.1);
+  filter: brightness(0.9);
   height: 100% !important;
   object-fit: cover !important
   background-repeat: no-repeat, repeat no-repeat;
