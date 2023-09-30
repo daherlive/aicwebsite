@@ -33476,8 +33476,8 @@ strong {
   background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(100%);
-    filter: blur(5px);
-    opacity: 0.2;
+    filter: blur(4px);
+    opacity: 0.1;
 }
 .is-dark .bg-pattern-bgimagetwo {
   background-image: url("https://p2.trrsf.com/image/fget/cf/940/0/images.terra.com/2017/12/29/7ee4b6ce-e0fa-4450-833c-e2d064349722.jpg");
@@ -33635,6 +33635,8 @@ strong {
 }
 .is-dark .bg-gradient-a {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a-dark.png");
+  filter: hue-rotate(470deg);
+  opacity: 0.5;
 }
 
 
