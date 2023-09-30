@@ -33804,6 +33804,7 @@ strong {
 .bg-shape-blur-m {
   height: 1160px;
   width: 1160px;
+  filter: hue-rotate(480deg);
   background-image: url("../images/shape/blur-m.png");
 }
 .bg-shape-blur-n {
