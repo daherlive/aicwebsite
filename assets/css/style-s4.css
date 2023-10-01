@@ -13119,6 +13119,14 @@ textarea.form-control-lg {
     display: none;
   }
  
+  .card-price{
+    width:90% !important; 
+    padding: 5px !important;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto
+  }
+
   .adj_hero_image{
     object-fit: cover !important;
     height: 700px !important;
@@ -34106,4 +34114,11 @@ body.is-dark {
 .section-20 {
   padding-top: 25px;
   padding-bottom: 0px;
+}
+
+.card-price{
+  width:40%; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto
 }
