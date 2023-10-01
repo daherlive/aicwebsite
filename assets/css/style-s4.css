@@ -13127,6 +13127,11 @@ textarea.form-control-lg {
     margin-right: auto
   }
 
+  .video-course{
+    width: 100%; 
+    height: 100%;
+  }
+
   .adj_hero_image{
     object-fit: cover !important;
     height: 700px !important;
@@ -34121,4 +34126,9 @@ body.is-dark {
   display: block; 
   margin-left: auto; 
   margin-right: auto
+}
+
+.video-course{
+  width: 560px; 
+  height: 615px;
 }
