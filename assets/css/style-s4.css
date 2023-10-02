@@ -13119,6 +13119,10 @@ textarea.form-control-lg {
     display: none;
   }
  
+  .ajt-text-left{
+
+    text-align: left !important;
+  }
   .card-price{
     width:100% !important; 
     padding: 5px !important;
