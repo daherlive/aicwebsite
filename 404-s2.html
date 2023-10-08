@@ -6,38 +6,155 @@
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png">
-    <title>404 Error - CopyGen - AI Writer &amp; Copywriting Landing Page HTML Template.</title>
+    <title>Dashboard | Departamento de Marketing AIC</title>
     <link rel="stylesheet" href="assets/css/style.css?v1.4.0">
 </head>
 
 <body class="nk-body " data-menu-collapse="lg">
     <div class="nk-app-root ">
         <main class="nk-pages">
-            <section class="section has-mask min-vh-100 d-flex flex-column">
+            <section  class="section has-mask pt-0 pb-0">
                 <div class="nk-mask bg-pattern-dot bg-blend-around"></div>
-                <div class="container my-auto">
-                    <div class="section-content">
+                <div class="container-fluid my-auto">
+                    <div class="section-content" id="btt">
                         <div class="row g-gs justify-content-center">
                             <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
-                                <div class="block-gfx mt-n5">
-                                    <img class="w-100 rounded-4" src="images/gfx/error/404.svg" alt="">
+                                <div class="block-gfx mt-n5 mt-5">
+                                    <Br><Br> <Br><Br> <Br><Br> <Br><Br>
+                                    <img class="w-100 rounded-4" src="https://www.aicinema.com.br/wp-content/themes/aic-astra-child/assets/images/logo.png" alt="">
                                 </div>
                                 <div class="block-text text-center mt-4">
-                                    <h3 class="title">Oops! Why you’re here?</h3>
-                                    <p>We are very sorry for inconvenience. It looks like you’re try to access a page that either has been deleted or never existed.</p>
+                                    <h3 class="title">Dashboard de Marketing</h3>
                                     <ul class="btn-list btn-list-inline g-0">
-                                        <li><a class="btn btn-primary" href="index.html"><span>Back to Home</span></a></li>
+                                        <li><a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#senhaModal"><span>Acessar</span></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div><!-- .section-content -->
+                    <div id="form" style="display: none;" class="section-content pt-0">
+                        <div id="iframee" class="row g-gs justify-content-center">
+                            <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12" style="position: sticky;">
+                                <!-- Placeholder animado (pode usar o Bootstrap spinner) -->
+                              
+                                <!-- IFrame oculto inicialmente -->
+                                <iframe id="myIframe" style=" height: 2500px; width: 100%;" src="" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div><!-- .section-content -->
                 </div><!-- .container -->
             </section><!-- .section -->
+
+            <div class="modal fade" id="senhaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Digite a Senha</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="senha" class="form-label">Senha:</label>
+                                    <input type="password" class="form-control" id="senha">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary" onclick="verificarSenha()">Verificar Senha</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+          
+
+         
+
+    <script>
+        // Função para carregar o iframe após o evento 'DOMContentLoaded' ou outro evento de sua escolha
+        function loadIframe() {
+            // Defina a URL do seu iframe
+            var iframeSrc = "https://lookerstudio.google.com/embed/reporting/6d115e80-30fe-43f6-8d65-0d81c76ef894/page/p_bu8cgwghad";
+            
+            // Atualize o src do iframe
+            document.getElementById("myIframe").src = iframeSrc;
+            
+            // Exiba o iframe e oculte o placeholder
+            document.getElementById("myIframe").style.display = "block";
+            document.getElementById("placeholder").style.display = "none";
+        }
+
+        // Adicione um ouvinte de evento para chamar a função de carregamento quando a página estiver pronta
+        document.addEventListener("DOMContentLoaded", loadIframe);
+    </script>
+
+<script>
+   $('iframe').on('load', function() {
+  var iframeContents = $(this).contents();
+  iframeContents.classList.hide('embedding-footer');
+});
+</script>
+
+            
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+          
+            <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Certifique-se de usar a versão correta do jQuery -->
+
+            <script defer>
+                // Lista de senhas e seus hashes correspondentes
+                var senhasHashes = {
+                    "senha1": "40bd001563085fc35165329ea1ff5c5ecbdbbeef", // Hash para "senha1"
+                    "senha2": "81dc9bdb52d04dc20036dbd8313ed055",       // Hash para "senha2"
+                    "senha3": "827ccb0eea8a706c4c34a16891f84e7b",       // Hash para "senha3"
+                };
+            
+                function verificarSenha() {
+                    var senhaInserida = $('#senha').val();
+                    var senhaInseridaHash = CryptoJS.SHA1(senhaInserida).toString(CryptoJS.enc.Hex);
+                    var senhaCorretaEncontrada = false;
+            
+                    // Verifique se a senha inserida corresponde a algum dos hashes
+                    for (var senha in senhasHashes) {
+                        if (senhasHashes.hasOwnProperty(senha)) {
+                            if (senhaInseridaHash === senhasHashes[senha]) {
+                                senhaCorretaEncontrada = true;
+                                $('#senhaModal').modal('hide'); // Fecha o modal usando jQuery
+                                $('#btt').hide();
+                                setTimeout(function() {
+                                    $('#da').show();
+                                    $('#form').show(); // Mostra o elemento com o ID "form"
+                                    $('#iframee')[0].scrollIntoView();
+                                }, 100); // Defina um pequeno atraso (100ms) antes de rolar a página
+                                break; // Saia do loop assim que uma senha correta for encontrada
+                            }
+                        }
+                    }
+            
+                    if (!senhaCorretaEncontrada) {
+                        alert('Senha incorreta. Tente novamente.');
+                    }
+                }
+            </script>
+
+        
+            <!-- Inclua a biblioteca CryptoJS para a função de hash -->
+
         </main>
     </div>
     <script src="assets/js/bundle.js?v1.4.0"></script>
     <script src="assets/js/scripts.js?v1.4.0"></script>
+    <script>
+        // Quando o conteúdo do iframe terminar de carregar
+        document.getElementById('report').onload = function () {
+            // Defina a altura do iframe com base na altura do conteúdo interno
+            var iframe = document.getElementById('report');
+            var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+            iframe.style.height = innerDoc.body.scrollHeight + 'px';
+        };
+    </script>
 </body>
 
 </html>
