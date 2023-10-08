@@ -33681,16 +33681,16 @@ strong {
   background-position: center 100%;
   filter: brightness(0.1);
   height: 100% !important;
-  object-fit: cover !important
+  object-fit: cover !important;
   background-repeat: no-repeat, repeat no-repeat;
  
 }
 .is-dark .bg-gradient-abcmobile {
-  background: rgb(31,38,50);
-  background: linear-gradient(64deg, rgba(31,38,50,1) 11%, rgba(10,12,15,0) 65%);
+  background: rgb(10,12,15);
+  background: linear-gradient(107deg, rgba(10,12,15,1) 33%, rgba(31,38,50,0) 50%);
     height: 100% !important;
     margin-top: -0px;
-  background-size: 2560px, cover;
+  background-size:  cover;
 }
 
 
