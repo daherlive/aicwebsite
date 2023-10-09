@@ -13118,6 +13118,10 @@ textarea.form-control-lg {
   .d-none-sml{
     display: none !important;
   }
+
+  .depoimento-curso{
+    height: 450px !important;
+  }
  
   .ajt-text-left{
 
@@ -34137,6 +34141,3 @@ body.is-dark {
   height: 600px;
 }
 
-.depoimento-curso{
-  height: 450px !important;
-}
