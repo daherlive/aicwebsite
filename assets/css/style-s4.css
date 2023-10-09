@@ -13116,7 +13116,7 @@ textarea.form-control-lg {
 
 @media (max-width: 576px) {
   .d-none-sml{
-    display: none;
+    display: none !important;
   }
  
   .ajt-text-left{
