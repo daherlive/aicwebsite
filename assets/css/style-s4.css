@@ -13142,9 +13142,9 @@ textarea.form-control-lg {
 
   .adj_hero_image{
     object-fit: cover !important;
-    height: 700px !important;
+    height: 100% !important;
     width: 100%;
-    opacity: 0.4 !important;
+    opacity: 0.2 !important;
   }
   .posi-mobile-text{
     margin-top: -120% !important;
