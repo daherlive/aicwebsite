@@ -34175,3 +34175,11 @@ body.is-dark {
   height: 600px;
 }
 
+.testemeu{
+  filter: grayscale(100);
+  width: 100% !important;
+  height: 600px;
+  object-fit: cover;
+  top:20px;
+
+}
