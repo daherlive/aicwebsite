@@ -85,7 +85,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #293a51;
   --bs-darker: #071321;
-  --bs-primary-rgb: 63, 62, 237;
+  --bs-primary-rgb: 255,8,50;
   --bs-secondary-rgb: 7, 19, 33;
   --bs-success-rgb: 85, 181, 158;
   --bs-info-rgb: 57, 186, 246;
@@ -144,7 +144,7 @@
   --bs-tertiary-bg-rgb: 248, 249, 250;
   --bs-heading-color: #293a51;
   --bs-link-color: #3f3eed;
-  --bs-link-color-rgb: 63, 62, 237;
+  --bs-link-color-rgb: 255,8,50;
   --bs-link-decoration: underline;
   --bs-link-hover-color: #3232be;
   --bs-link-hover-color-rgb: 50, 50, 190;
