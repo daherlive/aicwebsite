@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png">
     <title>Rascunho de design</title>
-    <link rel="stylesheet" href="assets/css/style-s4.css?v1.4.0">
+    <link rel="stylesheet" href="assets/css/style-s4.css">
     <!-- Estilos do Splide -->
     <link async rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'>
     <!-- Adicione o JavaScript Plyr -->
@@ -292,9 +292,22 @@
                 <!-- .container -->
                 <div class="container">
                     <div class="section-content">
-                        <div class="swiper-init  " data-slidesperview="2" data-space-between="14"
+                        <div class="swiper-init overflow-hidden " data-slidesperview="2" data-space-between="14"
                             data-centeredslides="false" data-loop="false" data-autoplay="false"
                             data-breakpoints='{"0":{"slidesPerView":1.4}, "778": {"slidesPerView": 3.8}}'>
+                            <ul class="d-none-sml swiper-button-wrap btn-list btn-list-inline gx-3 bottom-0 end-0 pb-md-5 pe-md-5"
+                            style="float: right;">
+                            <li>
+                                <div
+                                    class="swiper-button-prev btn btn-sm btn-icon btn-outline-primary rounded-pill">
+                                    <em class="icon ni ni-arrow-long-left"></em></div>
+                            </li>
+                            <li>
+                                <div
+                                    class="swiper-button-next btn btn-sm btn-icon btn-outline-primary rounded-pill">
+                                    <em class="icon ni ni-arrow-long-right"></em></div>
+                            </li>
+                        </ul><!-- .swiper-button-wrap -->
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="block-gfx rounded-4 overflow-hidden" style="height: 400px;">
@@ -722,6 +735,19 @@
                         <div class="swiper-init overflow-hidden" data-slidesperview="2" data-space-between="18"
                             data-centeredslides="false" data-loop="true" data-autoplay="false"
                             data-breakpoints='{"0":{"slidesPerView":1.4}, "778": {"slidesPerView": 3.8}}'>
+                            <ul class="d-none-sml swiper-button-wrap btn-list btn-list-inline gx-3 bottom-0 end-0 pb-md-5 pe-md-5"
+                            style="float: right;">
+                            <li>
+                                <div
+                                    class="swiper-button-prev btn btn-sm btn-icon btn-outline-primary rounded-pill">
+                                    <em class="icon ni ni-arrow-long-left"></em></div>
+                            </li>
+                            <li>
+                                <div
+                                    class="swiper-button-next btn btn-sm btn-icon btn-outline-primary rounded-pill">
+                                    <em class="icon ni ni-arrow-long-right"></em></div>
+                            </li>
+                        </ul><!-- .swiper-button-wrap -->
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="block-gfx rounded-4 overflow-hidden" style="height: 250px;">

@@ -425,3 +425,17 @@
 
   return NioApp;
 })(NioApp);
+
+
+function removeOverflowHiddenOnMobile() {
+  if (window.innerWidth < 768) { // Altere 768 para a largura que você considera como limite entre desktop e mobile
+    const divs = document.querySelectorAll('.swiper-init.overflow-hidden');
+
+    divs.forEach(div => {
+      div.classList.remove('overflow-hidden');
+    });
+  }
+}
+
+// Chame a função no momento apropriado, por exemplo, após o carregamento da página
+removeOverflowHiddenOnMobile();

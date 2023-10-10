@@ -427,7 +427,7 @@
                 </div><!-- .container -->
             </section>
 
-            <section class="section section-lg ">
+            <section class="section section-lg bg-light">
                 <div class="container">
                     <div class="section-head">
                         <div class="row justify-content-center text-center">
@@ -643,7 +643,7 @@
                     <div class="section-content">
                         <div class="container">
                             <div class="section-content">
-                                <div class="swiper-init   " data-slidesperview="2" data-space-between="10"
+                                <div class="swiper-init overflow-hidden" data-slidesperview="2" data-space-between="10"
                                     data-centeredslides="false" data-loop="true" data-autoplay="false"
                                     data-breakpoints='{"0":{"slidesPerView":1.4}, "778": {"slidesPerView": 4.8}}'>
                                     <ul class="d-none-sml swiper-button-wrap btn-list btn-list-inline gx-3 bottom-0 end-0 pb-md-5 pe-md-5"
@@ -1076,44 +1076,58 @@
     <div class="modal fade" id="ementacta" tabindex="-1" aria-labelledby="ementactaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              
                 <div class="modal-body">
-                    <div class="row justify-content-center text-center">
-                        <div class="col-xl-8 col-xxl-9">
-                            <div class="block-text">
-                                <span class="title h4">Receba a ementa e guida do curso no seu WhatsApp</span>
-                                <em class="icon ni ni-whatsapp"></em>
-                                <form data-action="form/message-form.php" method="post" class="form-submit-init mt-3" novalidate="true">
-                                    <div class="row g-4">
-                                        <div class="col-12 mt-5">
-                                            <div class="form-group">
-                                                <div class="form-control-wrap">
-                                                    <input type="text" name="user-name" class="form-control form-control-lg" placeholder="Seu none" required="">
-                                                </div>
-                                                <div class="form-control-wrap mt-2">
-                                                    <input type="phone" name="user-email" class="form-control form-control-lg" placeholder="Seu zap" required="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- .col -->
-                                        
-                                        <!-- .col -->
-                                    
-                                        <!-- .col -->
-                                       
-                                        <!-- .col -->
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <button class="btn btn-primary" type="submit" id="submit-btn">Receber agora!</button>
-                                            </div>
-                                            <div class="form-result mt-4"></div>
+                    <div class="card-body">
+                        <form action="index.html" novalidate="">
+                            <div class="row g-4">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="emailorusername">Email or Username</label>
+                                        <div class="form-control-wrap">
+                                            <input type="email" name="emailorusername" id="emailorusername" class="form-control form-control-lg" placeholder="Enter Email or Username" required="">
                                         </div>
                                     </div>
-                                    <!-- .row -->
-                                </form>
-                            
-                            </div>
-                        </div>
+                                </div>
+                                <!-- .col -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label" for="toggle-password">Password</label>
+                                        <div class="form-control-wrap">
+                                            <a href="toggle-password" class="form-control-icon end password-toggle" title="Toggle show/hide password">
+                                                <em class="on icon ni ni-eye text-base"></em>
+                                                <em class="off icon ni ni-eye-off text-base"></em>
+                                            </a>
+                                            <input type="password" name="password" id="toggle-password" class="form-control form-control-lg" placeholder="Enter Password" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .col -->
+                                <div class="col-12">
+                                    <div class="d-flex flex-wrap justify-content-between has-gap g-3">
+                                        <div class="form-group">
+                                            <div class="form-check form-check-sm">
+                                                <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                                <label class="form-check-label" for="rememberMe"> Remember Me </label>
+                                            </div>
+                                        </div>
+                                        <a href="reset.html" class="small">Forgot Password?</a>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary btn-block" type="submit" id="submit-btn">Login</button>
+                                    </div>
+                                </div><!-- .col -->
+                                <div class="col-12 text-center">
+                                    <div class="small mb-3">or login with</div>
+                                    <ul class="btn-list btn-list-inline gx-2">
+                                        <li><a class="btn btn-light btn-icon" href="#"><em class="icon fs-5 ni ni-facebook-f"></em></a></li>
+                                        <li><a class="btn btn-light btn-icon" href="#"><em class="icon fs-5 ni ni-google"></em></a></li>
+                                        <li><a class="btn btn-light btn-icon" href="#"><em class="icon fs-5 ni ni-apple"></em></a></li>
+                                    </ul>
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </form>
                     </div>
                 </div>
                
