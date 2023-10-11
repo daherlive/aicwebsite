@@ -5543,7 +5543,7 @@ textarea.form-control-lg {
   --bs-card-subtitle-color: ;
   --bs-card-border-width: 1px;
   --bs-card-border-color: #dce3ed;
-  --bs-card-border-radius: 0.375rem;
+  --bs-card-border-radius: 0.075rem;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(0.375rem - 1px);
   --bs-card-cap-padding-y: 1rem;
