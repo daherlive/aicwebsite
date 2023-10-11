@@ -28,6 +28,7 @@
         window.addEventListener('load', updateThemeClass);
     </script>
     <script defer src="assets/js/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webp-converter/2.0.0/webp-converter.min.js"></script>
 
 </head>
 
@@ -63,7 +64,7 @@
                                 <em class="off icon ni ni-sun-fill"></em>
                                 <em class="on icon ni ni-moon-fill"></em>
                             </button>
-                            <button class="btn btn-light btn-icon header-menu-toggle">
+                            <button aria-label="toggle-hader-menu-button" class="btn btn-light btn-icon header-menu-toggle">
                                 <em class="icon ni ni-menu"></em>
                             </button>
                         </div>
@@ -137,7 +138,7 @@
                             </ul>
                             <!-- .nk-menu-list -->
                             <div class="mx-2 d-none d-lg-block">
-                                <button class="dark-mode-toggle">
+                                <button aria-label="toggle-theme-button" class="dark-mode-toggle">
                                     <em class="off icon ni ni-sun-fill"></em>
                                     <em class="on icon ni ni-moon-fill"></em>
                                 </button>
@@ -965,7 +966,25 @@
    
     <script defer src="assets/js/scripts.js"></script>
 
-   
+   <script>
+     const webpConverter = require("webp-converter");
+
+// Converte todas as imagens JPG para WebP
+const images = document.querySelectorAll("img[src$='.jpg']");
+
+for (const image of images) {
+  const webpImage = await webpConverter.convert(image.src);
+  image.src = webpImage.buffer;
+}
+
+// Converte todas as imagens PNG para WebP
+const images = document.querySelectorAll("img[src$='.png']");
+
+for (const image of images) {
+  const webpImage = await webpConverter.convert(image.src);
+  image.src = webpImage.buffer;
+}
+   </script>
     
 </body>
 
