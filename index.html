@@ -8,11 +8,8 @@
     <link rel="shortcut icon" href="images/favicon.png">
     <title>Rascunho de design</title>
     <link rel="stylesheet" href="assets/css/style-s4.css">
-    <!-- Estilos do Splide -->
-    <link async rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'>
-    <!-- Adicione o JavaScript Plyr -->
-    <script async src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
-    <script>
+
+    <script defer>
         function isSystemDarkMode() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
@@ -30,6 +27,7 @@
         // Chame a função quando a página carregar
         window.addEventListener('load', updateThemeClass);
     </script>
+
 
  
 
@@ -969,13 +967,7 @@
             </div><!-- .section -->
         </footer>
     </div>
-    <script async>
-        document.addEventListener('DOMContentLoaded', () => {
-            const player = new Plyr('.plyr-container', {
-                // Opções Plyr (opcional)
-            });
-        });
-    </script>
+   
     <script src="assets/js/bundle.js?v1.4.0"></script>
     <script src="assets/js/scripts.js?v1.4.0"></script>
 
@@ -994,19 +986,7 @@
             </div>
         </div>
     </div>
-    <script async>
-        var players = plyr.setup();
-
-        players.forEach(function (player) {
-            player.on('play', function () {
-                var others = players.filter(other => other != player)
-                others.forEach(function (other) {
-                    other.pause();
-                })
-            });
-        });
-
-    </script>
+    
 </body>
 
 </html>
