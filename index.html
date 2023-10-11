@@ -12,7 +12,7 @@
     <link async rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'>
     <!-- Adicione o JavaScript Plyr -->
     <script async src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
-    <script>
+    <script async>
         function isSystemDarkMode() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
@@ -31,47 +31,7 @@
         window.addEventListener('load', updateThemeClass);
     </script>
 
-    <script>
-        const fs = require('fs');
-const imagemin = require('imagemin');
-const imageminWebp = require('imagemin-webp');
-
-// Diretório de entrada (contendo imagens JPG e PNG)
-const inputDir = 'input_images';
-
-// Diretório de saída (imagens otimizadas em formato WebP)
-const outputDir = 'output_images';
-
-// Função para otimizar e converter imagens para WebP
-async function optimizeAndConvertToWebP(inputPath, outputPath) {
-  await imagemin([inputPath], {
-    destination: outputDir,
-    plugins: [
-      imageminWebp({ quality: 75 }) // Ajuste a qualidade conforme necessário
-    ]
-  });
-  console.log(`Imagem otimizada e convertida para WebP: ${inputPath}`);
-}
-
-// Lê o diretório de entrada
-fs.readdir(inputDir, (err, files) => {
-  if (err) {
-    console.error('Erro ao ler o diretório de entrada:', err);
-    return;
-  }
-
-  // Filtra apenas os arquivos de imagem JPG e PNG
-  const imageFiles = files.filter(file => file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.png'));
-
-  // Otimiza e converte cada imagem para WebP
-  imageFiles.forEach(file => {
-    const inputPath = `${inputDir}/${file}`;
-    const outputPath = `${outputDir}/${file.replace(/\.(jpg|png)$/, '.webp')}`;
-    optimizeAndConvertToWebP(inputPath, outputPath);
-  });
-});
-
-    </script>
+ 
 
 </head>
 
@@ -1009,15 +969,15 @@ fs.readdir(inputDir, (err, files) => {
             </div><!-- .section -->
         </footer>
     </div>
-    <script defer>
+    <script async>
         document.addEventListener('DOMContentLoaded', () => {
             const player = new Plyr('.plyr-container', {
                 // Opções Plyr (opcional)
             });
         });
     </script>
-    <script src="assets/js/bundle.js?v1.4.0"></script>
-    <script src="assets/js/scripts.js?v1.4.0"></script>
+    <script async src="assets/js/bundle.js?v1.4.0"></script>
+    <script async src="assets/js/scripts.js?v1.4.0"></script>
 
     <!-- Modal -->
     <div class="modal fade video-modal" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -1034,7 +994,7 @@ fs.readdir(inputDir, (err, files) => {
             </div>
         </div>
     </div>
-    <script defer>
+    <script async>
         var players = plyr.setup();
 
         players.forEach(function (player) {
