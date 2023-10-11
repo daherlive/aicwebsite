@@ -31,6 +31,48 @@
         window.addEventListener('load', updateThemeClass);
     </script>
 
+    <script>
+        const fs = require('fs');
+const imagemin = require('imagemin');
+const imageminWebp = require('imagemin-webp');
+
+// Diretório de entrada (contendo imagens JPG e PNG)
+const inputDir = 'input_images';
+
+// Diretório de saída (imagens otimizadas em formato WebP)
+const outputDir = 'output_images';
+
+// Função para otimizar e converter imagens para WebP
+async function optimizeAndConvertToWebP(inputPath, outputPath) {
+  await imagemin([inputPath], {
+    destination: outputDir,
+    plugins: [
+      imageminWebp({ quality: 75 }) // Ajuste a qualidade conforme necessário
+    ]
+  });
+  console.log(`Imagem otimizada e convertida para WebP: ${inputPath}`);
+}
+
+// Lê o diretório de entrada
+fs.readdir(inputDir, (err, files) => {
+  if (err) {
+    console.error('Erro ao ler o diretório de entrada:', err);
+    return;
+  }
+
+  // Filtra apenas os arquivos de imagem JPG e PNG
+  const imageFiles = files.filter(file => file.toLowerCase().endsWith('.jpg') || file.toLowerCase().endsWith('.png'));
+
+  // Otimiza e converte cada imagem para WebP
+  imageFiles.forEach(file => {
+    const inputPath = `${inputDir}/${file}`;
+    const outputPath = `${outputDir}/${file.replace(/\.(jpg|png)$/, '.webp')}`;
+    optimizeAndConvertToWebP(inputPath, outputPath);
+  });
+});
+
+    </script>
+
 </head>
 
 <body class="nk-body " id="check-os-theme" data-menu-collapse="lg">
@@ -297,19 +339,20 @@
                             data-breakpoints='{"0":{"slidesPerView":1.4}, "778": {"slidesPerView": 3.8}}'>
                             <ul class="d-none-sml swiper-button-wrap btn-list btn-list-inline gx-3 bottom-0 end-0 pb-md-5 pe-md-5"
                             style="float: right;">
-                            <li>
-                                <div
-                                    class="swiper-button-prev btn btn-sm btn-icon btn-outline-primary rounded-pill">
-                                    <em class="icon ni ni-arrow-long-left"></em></div>
-                            </li>
-                            <li>
-                                <div
-                                    class="swiper-button-next btn btn-sm btn-icon btn-outline-primary rounded-pill">
-                                    <em class="icon ni ni-arrow-long-right"></em></div>
-                            </li>
-                        </ul><!-- .swiper-button-wrap -->
-                            <div class="swiper-wrapper">
+                                <li>
+                                    <div
+                                        class="swiper-button-prev btn btn-sm btn-icon btn-outline-primary rounded-pill">
+                                        <em class="icon ni ni-arrow-long-left"></em></div>
+                                </li>
+                                <li>
+                                    <div
+                                        class="swiper-button-next btn btn-sm btn-icon btn-outline-primary rounded-pill">
+                                        <em class="icon ni ni-arrow-long-right"></em></div>
+                                </li>
+                            </ul><!-- .swiper-button-wrap -->
+                            <div class="swiper-wrapper">                  
                                 <div class="swiper-slide">
+                                    <div class="placeholder"></div> <!-- Placeholder -->
                                     <div class="block-gfx rounded-4 overflow-hidden" style="height: 400px;">
                                         <a href="areas.html">  <img loading="lazy" class="rounded-4" style="height: 100% !important; object-fit: cover;"
                                             src="https://www.aicinema.com.br/wp-content/uploads/sites/2/2023/04/cinema_semestral_redux.jpg"
@@ -323,6 +366,8 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
+                                    <div class="placeholder"></div> <!-- Placeholder -->
+
                                     <div class="block-gfx rounded-4 overflow-hidden" style="height: 400px;">
                                         <a href="areas.html">  <img loading="lazy" class="rounded-4" style="height: 100% !important; object-fit: cover;"
                                             src="https://www.aicinema.com.br/wp-content/uploads/2017/11/foto_yuri_pinheiro-7919-e1511376616277.jpg"
@@ -336,6 +381,8 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
+                                    <div class="placeholder"></div> <!-- Placeholder -->
+
                                     <div class="block-gfx rounded-4 overflow-hidden" style="height: 400px;">
                                         <a href="areas.html"> <img loading="lazy" class="rounded-4" style="height: 100% !important; object-fit: cover;"
                                             src="https://www.aicinema.com.br/wp-content/uploads/2017/06/AIC-2014_Foto-Alessandra-Haro_093-1020x680.jpg"
@@ -348,8 +395,9 @@
                                             facilis pariatur reprehenderit, sequi minus mollitia </p>
                                     </div>
                                 </div>
-
                                 <div class="swiper-slide">
+                                    <div class="placeholder"></div> <!-- Placeholder -->
+
                                     <div class="block-gfx rounded-4 overflow-hidden" style="height: 400px;">
                                       <a href="areas.html"><img loading="lazy" class="rounded-4" style="height: 100% !important; object-fit: cover;"
                                             src="https://www.aicinema.com.br/wp-content/uploads/2017/02/IMG_1038_editado.jpg"
