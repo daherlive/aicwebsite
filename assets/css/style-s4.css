@@ -34063,7 +34063,7 @@ body.is-dark {
   background-color: RGBA(39, 44, 51 var(--bs-bg-opacity, 1)) !important;
 }
 .is-dark:not(.bg-darker):not(.bg-dark) .bg-light {
-  background-color: RGBA(29, 39, 51, 20) !important;
+  background-color: RGBA(15, 19, 30, var(--bs-bg-opacity, 1)) !important;
 }
 
 
