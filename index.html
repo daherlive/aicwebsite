@@ -12,7 +12,7 @@
     <link async rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'>
     <!-- Adicione o JavaScript Plyr -->
     <script async src="https://cdn.plyr.io/3.6.4/plyr.js"></script>
-    <script async>
+    <script>
         function isSystemDarkMode() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
@@ -969,12 +969,6 @@
             </div><!-- .section -->
         </footer>
     </div>
-
-
-    <script  src="assets/js/scripts.js?v1.4.0"></script>
-    <script  src="assets/js/bundle.js?v1.4.0"></script>
-
-
     <script async>
         document.addEventListener('DOMContentLoaded', () => {
             const player = new Plyr('.plyr-container', {
@@ -982,7 +976,8 @@
             });
         });
     </script>
-
+    <script src="assets/js/bundle.js?v1.4.0"></script>
+    <script src="assets/js/scripts.js?v1.4.0"></script>
 
     <!-- Modal -->
     <div class="modal fade video-modal" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel"
