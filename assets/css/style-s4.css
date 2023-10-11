@@ -13161,6 +13161,12 @@ textarea.form-control-lg {
 
     text-align: left !important;
   }
+
+  .ajt-text-justified{
+
+    text-align: justify !important;
+  }
+
   .card-price{
     width:100% !important; 
     padding: 5px !important;
@@ -32914,7 +32920,8 @@ img {
 }
 
 strong {
-  color: #292962;
+  color: black;
+  font-weight: 3000;
 }
 
 .is-dark {
@@ -34027,7 +34034,7 @@ strong {
 }
 
 body.is-dark {
-  background-color: RGBA(15, 19, 24, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(15, 19, 19, var(--bs-bg-opacity, 1)) !important;
 }
 
 .visible-on-dark-mode {
@@ -34063,7 +34070,7 @@ body.is-dark {
   background-color: RGBA(39, 44, 51 var(--bs-bg-opacity, 1)) !important;
 }
 .is-dark:not(.bg-darker):not(.bg-dark) .bg-light {
-  background-color: RGBA(15, 22, 28, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(20, 25, 25, var(--bs-bg-opacity, 1)) !important;
 }
 
 
