@@ -6769,7 +6769,7 @@ textarea.form-control-lg {
 .modal-backdrop {
   --bs-backdrop-zindex: 1050;
   --bs-backdrop-bg: #000;
-  --bs-backdrop-opacity: 0.8;
+  --bs-backdrop-opacity: 0.9;
   position: fixed;
   top: 0;
   left: 0;
