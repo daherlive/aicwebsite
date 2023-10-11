@@ -13192,7 +13192,7 @@ textarea.form-control-lg {
   .video-institucional{
     height: 100% !important; 
     height: 380px !important;
-    border-radius: 3px !important;
+    border-radius: 5px !important;
     object-fit: cover !important;
   }
 }
@@ -33692,7 +33692,7 @@ strong {
   background-image: url("../images/gradient/a-blur.png"), url("../images/gradient/a.png");
   background-size: 2560px, cover;
   background-position: center 100%;
-  filter: brightness(0.3);
+  filter: brightness(0.2);
   background-repeat: no-repeat, repeat no-repeat;
 }
 .is-dark .bg-gradient-a {
