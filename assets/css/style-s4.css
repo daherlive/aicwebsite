@@ -13196,6 +13196,14 @@ textarea.form-control-lg {
     object-fit: cover !important;
   }
 }
+
+
+
+@media (max-width: 576px) {
+  .order-1-sm {
+    order: -1 !important;
+  }
+}
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
