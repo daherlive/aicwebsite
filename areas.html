@@ -2,6 +2,24 @@
 <html lang="en">
 
 <head>
+    <script defer>
+        function isSystemDarkMode() {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        function updateThemeClass() {
+            const divElement = document.getElementById('check-os-theme'); // Substitua 'sua-div' pelo ID da sua div
+
+            if (isSystemDarkMode()) {
+                divElement.classList.add('is-dark');
+            } else {
+                divElement.classList.remove('is-dark');
+            }
+        }
+
+        // Chame a função quando a página carregar
+        window.addEventListener('load', updateThemeClass);
+    </script>
     <meta charset="UTF-8">
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,7 +83,7 @@
                                     </a>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="#" class="nk-menu-link">
+                                    <a href="sobre-aic.html" class="nk-menu-link">
                                         <span class="nk-menu-text">Sobre a AIC</span>
                                     </a>
                                 </li>
@@ -110,24 +128,24 @@
                                     </div>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="#" class="nk-menu-link">
+                                    <a href="eventos.html" class="nk-menu-link">
                                         <span class="nk-menu-text">Eventos</span>
                                     </a>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="#" class="nk-menu-link">
+                                    <a href="noticas.html" class="nk-menu-link">
                                         <span class="nk-menu-text">Notícias</span>
                                     </a>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="#" class="nk-menu-link">
+                                    <a href="contato.html" class="nk-menu-link">
                                         <span class="nk-menu-text">Contato</span>
                                     </a>
                                 </li>
                             </ul>
                             <!-- .nk-menu-list -->
                             <div class="mx-2 d-none d-lg-block">
-                                <button class="dark-mode-toggle">
+                                <button aria-label="toggle-theme-button" class="dark-mode-toggle">
                                     <em class="off icon ni ni-sun-fill"></em>
                                     <em class="on icon ni ni-moon-fill"></em>
                                 </button>
@@ -254,21 +272,18 @@
                                     data-centeredslides="false" data-loop="true" data-autoplay="false"
                                     data-breakpoints='{"0":{"slidesPerView":1.4}, "778": {"slidesPerView": 3.8}}'>
 
-                                    <ul class="d-none-sml swiper-button-wrap btn-list btn-list-inline gx-3 bottom-0 end-0 pb-md-5 pe-md-5"
-                                        style="float: right;">
-                                        <li>
-                                            <div
-                                                class="swiper-button-prev btn btn-sm btn-icon btn-outline-primary rounded-pill">
-                                                <em class="icon ni ni-arrow-long-left"></em>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div
-                                                class="swiper-button-next btn btn-sm btn-icon btn-outline-primary rounded-pill">
-                                                <em class="icon ni ni-arrow-long-right"></em>
-                                            </div>
-                                        </li>
-                                    </ul><!-- .swiper-button-wrap -->
+                                    <ul class="d-none-sml swiper-button-wrap position-relative  btn-list-inline "
+                                    >
+                                         <li class="position-absolute"  style="right:97%;  margin-top: 15%;">
+                                             <div
+                                                 class="swiper-button-prev btn btn-sm btn-icon btn-darker rounded-pill">
+                                                 <em class="icon ni ni-arrow-long-left text-white"></em></div>
+                                         </li>
+                                         <li class="position-absolute" style="left:97%;  margin-top: 15%;">
+                                             <div class="swiper-button-next btn btn-sm btn-icon btn-darker rounded-pill">
+                                                 <em class="icon ni ni-arrow-long-right text-white"></em></div>
+                                         </li>
+                                     </ul><!-- .swiper-button-wrap -->
 
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
